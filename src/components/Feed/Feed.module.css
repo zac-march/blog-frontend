@@ -1,0 +1,20 @@
+@import "../../index.css";
+
+.body {
+  background-color: aqua;
+}
+
+.container {
+}
+
+.container > div:first-child h2 {
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.container > div:first-child p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+}
