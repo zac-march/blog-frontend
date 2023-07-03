@@ -1,11 +1,13 @@
-import { Header, MantineProvider, Text } from "@mantine/core";
+import "./App.css";
+import Header from "./components/Header/Header";
 
-export default function App() {
+function App() {
   return (
-    <MantineProvider
-      withGlobalStyles
-      withNormalizeCSS
-      theme={{ colorScheme: "dark" }}
-    ></MantineProvider>
+    <div className="App">
+      <Header></Header>
+      <main></main>
+    </div>
   );
 }
+
+export default App;
