@@ -1,15 +1,30 @@
 const HOST = "http://localhost:3001";
 
 const blogApi = {
-  async fetchPosts() {
-    try {
-      const response = await fetch(`${HOST}/posts`);
-      const data = await response.json();
+  get: {
+    async posts() {
+      const data = await apiCall(`${HOST}/posts`);
       return data;
-    } catch (err) {
-      console.log(err);
-    }
+    },
+    async post(postId) {
+      const data = await apiCall(`${HOST}/post/${postId}`);
+      return data;
+    },
+    async comments(postId) {
+      const data = await apiCall(`${HOST}/post/${postId}/comments`);
+      return data;
+    },
   },
 };
+
+async function apiCall(endpoint) {
+  try {
+    const response = await fetch(endpoint);
+    const data = await response.json();
+    return data;
+  } catch (err) {
+    console.log(err);
+  }
+}
 
 export default blogApi;

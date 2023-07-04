@@ -3,7 +3,7 @@ import styles from "./PostCard.module.css";
 function PostCard({ data }) {
   return (
     <div className={styles.container}>
-      <a href="/">
+      <a href={`#/post/${data._id}`}>
         <small className={styles.date}>
           {new Date(data.dateAdded).toLocaleDateString()}
         </small>

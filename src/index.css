@@ -1,15 +1,13 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
   --accent-color: #ff8341;
-  --bg-color: #292e34;
+  --bg-color: #1a1b1f;
   --text-color: white;
   --scaleDown: scale(0.98);
   --scaleUp: scale(1.02);

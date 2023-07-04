@@ -8,7 +8,7 @@ function Feed() {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const data = await blogApi.fetchPosts();
+      const data = await blogApi.get.posts();
       console.log(data);
       setPosts(data);
     };

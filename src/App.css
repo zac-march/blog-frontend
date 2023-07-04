@@ -1,5 +1,7 @@
 .App {
   padding-top: var(--header-height);
+  background-color: var(--bg-color);
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
   min-height: 100vh;
